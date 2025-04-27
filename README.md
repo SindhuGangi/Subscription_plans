@@ -1,1 +1,1 @@
-# Subscription_plans
+# Responsive Subscription_plans

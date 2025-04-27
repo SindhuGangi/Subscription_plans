@@ -11,6 +11,9 @@
       rel="stylesheet"
     />
     <style>
+      html, body {
+        height: 100%;
+      }
       body {
         font-family: "Sono", sans-serif;
         background-color: aliceblue;
@@ -137,7 +140,9 @@
       @media (max-width: 600px)  {
         .pricing-container{
           flex-direction: column;
-          height: 100%;
+          justify-content: flex-start;
+          align-items: center;
+          height: auto;
         }
         .pricing-plan{
         width: 90%;

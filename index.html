@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flexbox Pricing Table</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Sono", sans-serif;
+        background-color: aliceblue;
+        color:#FFF;
+        text-align:center;                             
+      }
+        .pricing-container{
+        display: flex;  
+        justify-content: center; 
+        align-items: center;
+        gap: 20px; 
+        height: 100vh;
+                        
+      }
+      .pricing-plan{
+        background-color:#26251e;
+        display: flex; 
+        flex-direction: column;
+        width: 300px;
+        height: 355px;
+        justify-content: flex-start;
+        align-items: center;
+        border-radius: 3%;
+        
+         
+         
+      }
+      
+      .pricing-plan:hover{
+      transition: 0.1s ease;
+       transform: translateY(-5px);
+      box-shadow: 0px 8px 20px rgba(0,0,0,0.3);
+       width: 305px;
+        height: 365px;
+    }
+      /* .pricing-plan2{
+        width: 280px;
+        height: 400px;
+      }
+      .pricing-plan2 .plan-title{
+        width: 92.5%;
+        flex-basis: 18%; 
+        padding:10px;
+      }
+      .pricing-plan2 .plan-price{
+        font-size: 32px;
+        flex-basis: 10%;
+      } 
+      .pricing-plan2 .plan-features{
+        font-size: 15px;
+        flex-basis: 10%;
+      }
+      .pricing-plan2 .plan{
+        flex-basis: 10%;
+      } 
+      .pricing-plan2 .plan-button{ 
+        flex-basis: 10%;    
+        width:70%;   
+      } */
+      .plan-button{
+        background-color:#FFF;
+         
+        border-radius:10px  ;
+        color:#000;  
+        font-weight: bolder;
+        flex-basis: 8%;     
+        width:60%;
+         
+         
+      }
+      .plan-button:hover{
+        background-color: rgb(51, 152, 152);
+        color:#FFF;
+      }
+      .plan-title{
+        background-color: rgb(51, 152, 152);
+        width: 96%;
+        flex-basis: 14%; 
+        padding:5px;
+        border-radius: 10px 10px 0px 0px;
+      }
+      .plan-price{
+        font-size: 25px;
+        font-weight: bold; 
+        align-self: center;   
+      }
+      .plan-features{
+        list-style: none;
+        list-style-position: inside;
+        line-height: 2.0;
+        align-self: center;
+        text-align:center;
+        flex-basis: 1%;
+      }
+      .pricing-plan1 .plan-features{
+        align-self:  center;
+        font-size: 19 px;
+        padding-right: 30px;
+        
+      } 
+      .plan{
+        color:rgb(17, 17, 240);   
+        flex-basis:10%;
+      }
+       
+       
+       
+       
+       
+      
+      
+       
+       
+       
+      
+       
+       
+       
+       
+  
+
+      /* Hint: What can you do with a media query and flexbox? */
+      @media (max-width: 600px) and (min-width: 200px)  {
+        .pricing-container{
+          flex-direction: column;
+          height: 100%;
+        }
+        .pricing-plan2{
+          flex-shrink: 1;
+           
+
+        }  
+
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pricing-container ">
+      <div class="pricing-plan pricing-plan1">
+        <div class="plan-title">Basic</div>
+        <div class="plan-price">$9.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 10GB Storage</li><hr/>
+          <li>✅ 1 User</li><hr/>
+          <li>🚫 Support</li><hr/>
+        </ul>
+       <div class="plan">  <a herf=" ">View Plan</a></div>
+        <button class="plan-button">Subscribe</button>
+      </div>
+      <div class="pricing-plan pricing-plan2">
+        <div class="plan-title">Standard</div>
+        <div class="plan-price">$19.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 50GB Storage  </li><hr/>
+          <li>✅ 5 Users</li><hr/>
+          <li>✅ Phone &amp; Email Support</li><hr/>
+        </ul>
+        <div class="plan">  <a herf=" ">View Plan</a></div>
+        <button class="plan-button">Subscribe</button>
+      </div>
+      <div class="pricing-plan pricing-plan1">
+        <div class="plan-title">Premium</div>
+        <div class="plan-price">$49.99/month</div>
+        <ul class="plan-features">
+          <li>✅ 100GB Storage</li><hr/>
+          <li>✅ 10 Users</li><hr/>
+          <li>✅ 24/7 Support</li><hr/>
+        </ul>
+        <div class="plan">  <a herf=" ">View Plan</a></div>
+        <button class="plan-button">Subscribe</button>
+      </div>
+    </div>
+  </body>
+</html>

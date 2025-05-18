@@ -2,8 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox Pricing Table</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,14 +11,14 @@
       rel="stylesheet"
     />
     <style>
-      html, body {
-        height: 100%;
-      }
       body {
         font-family: "Sono", sans-serif;
         background-color: aliceblue;
         color:#FFF;
-        text-align:center;                             
+        text-align:center;  
+        text-align: center;
+        margin: 0;
+        padding: 0;                           
       }
         .pricing-container{
         display: flex;  
@@ -38,9 +37,7 @@
         height: 355px;
         justify-content: flex-start;
         align-items: center;
-        border-radius: 3%;
-        
-         
+        border-radius: 3%; 
          
       }
       
@@ -76,14 +73,12 @@
         width:70%;   
       } */
       .plan-button{
-        background-color:#FFF;
-         
+        background-color:#FFF; 
         border-radius:10px  ;
         color:#000;  
         font-weight: bolder;
         flex-basis: 8%;     
-        width:60%;
-         
+        width:60%;    
          
       }
       .plan-button:hover{
@@ -112,7 +107,7 @@
       }
       .pricing-plan1 .plan-features{
         align-self:  center;
-        font-size: 19px;
+        font-size: 19 px;
         padding-right: 30px;
         
       } 
@@ -120,39 +115,13 @@
         color:rgb(17, 17, 240);   
         flex-basis:10%;
       }
-       
-       
-       
-       
-       
-      
-      
-       
-       
-       
-      
-       
-       
-       
-       
-  
-
+        
       /* Hint: What can you do with a media query and flexbox? */
-      @media (max-width: 600px)  {
-         
+      @media (max-width: 600px )   {
         .pricing-container{
           flex-direction: column;
-          justify-content: flex-start;
-          align-items: center;
           height: auto;
-          flex-wrap: nowrap;
         }
-        .pricing-plan{
-        width: 90%;
-        margin-bottom: 20px;
-
-        }  
-
 
       }
     </style>
